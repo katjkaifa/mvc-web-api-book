@@ -1,0 +1,18 @@
+﻿@model PartyInvites.Models.GuestResponse
+
+@{ 
+    ViewBag.Title = "Rsvp";
+}
+
+<div class="panel panel-success">
+    <div class="panel-heading"><h4>RSVP</h4></div>
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+        <div class="form-group">
+            <label>Your name:</label>
+            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        </div>
+        }
+    </div>
+</div>
